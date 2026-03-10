@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>National Park Road Trip Planner - Page 2</title>
+  <style>
+    /* External snippet idea from CSS-Tricks Almanac:
+       scroll-behavior: smooth; */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(to bottom, #fffaf0, #fef3c7);
+      color: #1f2937;
+    }
+
+    #top {
+      display: block;
+      position: absolute;
+      top: 0;
+    }
+
+    header {
+      background: #9a3412;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    nav {
+      background: #7c2d12;
+      text-align: center;
+      padding: 12px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 30px auto;
+      background: white;
+      padding: 25px;
+      border-radius: 14px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+    }
+
+    h2 {
+      color: #9a3412;
+      margin-top: 0;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    th, td {
+      border: 2px solid white;
+      padding: 14px;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    th {
+      background: #9a3412;
+      color: white;
+      font-size: 1.05rem;
+    }
+
+    /* 6 different row colors */
+    .row1 { background: #fecaca; }
+    .row2 { background: #fde68a; }
+    .row3 { background: #bbf7d0; }
+    .row4 { background: #bfdbfe; }
+    .row5 { background: #e9d5ff; }
+    .row6 { background: #fbcfe8; }
+
+    td img {
+      width: 150px;
+      height: 95px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 3px solid white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .button-link {
+      display: inline-block;
+      margin-top: 20px;
+      background: #9a3412;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .button-link:hover {
+      background: #7c2d12;
+    }
+
+    .top-link {
+      display: inline-block;
+      margin-top: 25px;
+      text-decoration: none;
+      color: #9a3412;
+      font-weight: bold;
+    }
+
+    .top-link:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      background: #9a3412;
+      color: white;
+      padding: 18px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <a id="top"></a>
+
+  <header>
+    <h1>National Park Road Trip Planner</h1>
+    <p>Page 2: Best trail stops and trip ideas for the same park adventure theme</p>
+  </header>
+
+  <nav>
+    <a href="tables.html">Back to Page 1</a>
+    <a href="index.html">Back to Index</a>
+  </nav>
+
+  <div class="container">
+    <h2>Best Trail Stops</h2>
+    <p>
+      This second page keeps the exact same theme and turns the trip into a more detailed plan.
+      Instead of just naming parks, this table gives one trail or featured stop at each location.
+      The image column again contains images in every cell, and the page includes another return-to-top anchor.
+    </p>
+
+    <table>
+      <tr>
+        <th>Trail Image</th>
+        <th>Trail / Stop</th>
+        <th>Trip Note</th>
+      </tr>
+
+      <tr class="row1">
+        <td>
+          <img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=600&q=80" alt="South Rim Trail">
+        </td>
+        <td>South Rim Trail</td>
+        <td>A great first stop for sunrise photos at the Grand Canyon.</td>
+      </tr>
+
+      <tr class="row2">
+        <td>
+          <img src="https://images.unsplash.com/photo-1508261305436-e9306fba9f5b?auto=format&fit=crop&w=600&q=80" alt="Mist Trail">
+        </td>
+        <td>Mist Trail</td>
+        <td>One of Yosemite’s most famous hikes with dramatic waterfall views.</td>
+      </tr>
+
+      <tr class="row3">
+        <td>
+          <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=600&q=80" alt="Old Faithful">
+        </td>
+        <td>Old Faithful Area</td>
+        <td>Easy to access and perfect for a classic Yellowstone stop.</td>
+      </tr>
+
+      <tr class="row4">
+        <td>
+          <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=80" alt="Angels Landing">
+        </td>
+        <td>Angels Landing Viewpoint</td>
+        <td>Even the lower sections give amazing canyon views in Zion.</td>
+      </tr>
+
+      <tr class="row5">
+        <td>
+          <img src="https://images.unsplash.com/photo-1509644851169-2acc08aa25b5?auto=format&fit=crop&w=600&q=80" alt="Bear Lake">
+        </td>
+        <td>Bear Lake Loop</td>
+        <td>A scenic, easier stop in Rocky Mountain National Park.</td>
+      </tr>
+
+      <tr class="row6">
+        <td>
+          <img src="https://images.unsplash.com/photo-1504198453319-5ce911bafcde?auto=format&fit=crop&w=600&q=80" alt="Delicate Arch">
+        </td>
+        <td>Delicate Arch Trail</td>
+        <td>The must-see landmark stop if Arches is on your route.</td>
+      </tr>
+    </table>
+
+    <a class="button-link" href="tables.html">Go Back to Page 1</a>
+    <br>
+    <a class="top-link" href="#top">Return to Top</a>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 National Park Road Trip Planner</p>
+  </footer>
+</body>
+</html>
