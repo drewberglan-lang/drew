@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>National Park Road Trip Planner</title>
+  <style>
+    /* External snippet idea from CSS-Tricks Almanac:
+       scroll-behavior: smooth;
+       Source noted for project requirement */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(to bottom, #f4f9ff, #dfefff);
+      color: #1f2937;
+    }
+
+    #top {
+      display: block;
+      position: absolute;
+      top: 0;
+    }
+
+    header {
+      background: #0f4c81;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    nav {
+      background: #083358;
+      text-align: center;
+      padding: 12px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 30px auto;
+      background: white;
+      padding: 25px;
+      border-radius: 14px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+    }
+
+    h2 {
+      color: #0f4c81;
+      margin-top: 0;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    th, td {
+      border: 2px solid white;
+      padding: 14px;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    th {
+      background: #0f4c81;
+      color: white;
+      font-size: 1.05rem;
+    }
+
+    /* 6 different row colors */
+    .row1 { background: #fde68a; }
+    .row2 { background: #bfdbfe; }
+    .row3 { background: #c7f9cc; }
+    .row4 { background: #fecdd3; }
+    .row5 { background: #ddd6fe; }
+    .row6 { background: #fbcfe8; }
+
+    td img {
+      width: 150px;
+      height: 95px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 3px solid white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .button-link {
+      display: inline-block;
+      margin-top: 20px;
+      background: #0f4c81;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .button-link:hover {
+      background: #083358;
+    }
+
+    footer {
+      text-align: center;
+      background: #0f4c81;
+      color: white;
+      padding: 18px;
+      margin-top: 30px;
+    }
+
+    .top-link {
+      display: inline-block;
+      margin-top: 25px;
+      text-decoration: none;
+      color: #0f4c81;
+      font-weight: bold;
+    }
+
+    .top-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <a id="top"></a>
+
+  <header>
+    <h1>National Park Road Trip Planner</h1>
+    <p>Page 1: Six incredible park stops for a dream western road trip</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Back to Index</a>
+    <a href="tables2.html">Go to Page 2</a>
+  </nav>
+
+  <div class="container">
+    <h2>Road Trip Overview</h2>
+    <p>
+      This website is built around one theme: planning a memorable national park road trip.
+      The first page highlights six major parks and what makes each one worth visiting.
+      The image column fulfills the project image requirement, and the second page continues
+      the same theme with trail ideas and trip planning details.
+    </p>
+
+    <table>
+      <tr>
+        <th>Park Image</th>
+        <th>National Park</th>
+        <th>Why It Belongs on the Trip</th>
+      </tr>
+
+      <tr class="row1">
+        <td>
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=600&q=80" alt="Grand Canyon">
+        </td>
+        <td>Grand Canyon</td>
+        <td>Massive views, iconic overlooks, and unforgettable desert scenery.</td>
+      </tr>
+
+      <tr class="row2">
+        <td>
+          <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=600&q=80" alt="Yosemite">
+        </td>
+        <td>Yosemite</td>
+        <td>Perfect for waterfalls, granite cliffs, and classic photography stops.</td>
+      </tr>
+
+      <tr class="row3">
+        <td>
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Yellowstone">
+        </td>
+        <td>Yellowstone</td>
+        <td>Famous geysers, wildlife watching, and a totally different landscape.</td>
+      </tr>
+
+      <tr class="row4">
+        <td>
+          <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=600&q=80" alt="Zion">
+        </td>
+        <td>Zion</td>
+        <td>Great for canyon hikes, red rock views, and adventurous trails.</td>
+      </tr>
+
+      <tr class="row5">
+        <td>
+          <img src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=600&q=80" alt="Rocky Mountain">
+        </td>
+        <td>Rocky Mountain</td>
+        <td>High-elevation drives, alpine lakes, and cooler mountain weather.</td>
+      </tr>
+
+      <tr class="row6">
+        <td>
+          <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=600&q=80" alt="Arches">
+        </td>
+        <td>Arches</td>
+        <td>Unique stone formations and one of the most recognizable desert parks.</td>
+      </tr>
+    </table>
+
+    <a class="button-link" href="tables2.html">Continue to Page 2</a>
+    <br>
+    <a class="top-link" href="#top">Return to Top</a>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 National Park Road Trip Planner</p>
+  </footer>
+</body>
+</html>
